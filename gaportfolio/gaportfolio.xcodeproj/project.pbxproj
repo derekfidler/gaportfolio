@@ -14,7 +14,6 @@
 		65C5C47318F9BF050002D569 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C5C47218F9BF050002D569 /* main.m */; };
 		65C5C47718F9BF050002D569 /* gaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C5C47618F9BF050002D569 /* gaAppDelegate.m */; };
 		65C5C47A18F9BF050002D569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C5C47818F9BF050002D569 /* Main.storyboard */; };
-		65C5C47D18F9BF050002D569 /* gaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C5C47C18F9BF050002D569 /* gaViewController.m */; };
 		65C5C47F18F9BF050002D569 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C5C47E18F9BF050002D569 /* Images.xcassets */; };
 		65C5C48618F9BF050002D569 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5C48518F9BF050002D569 /* XCTest.framework */; };
 		65C5C48718F9BF050002D569 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5C46618F9BF050002D569 /* Foundation.framework */; };
@@ -45,8 +44,6 @@
 		65C5C47518F9BF050002D569 /* gaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gaAppDelegate.h; sourceTree = "<group>"; };
 		65C5C47618F9BF050002D569 /* gaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gaAppDelegate.m; sourceTree = "<group>"; };
 		65C5C47918F9BF050002D569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		65C5C47B18F9BF050002D569 /* gaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gaViewController.h; sourceTree = "<group>"; };
-		65C5C47C18F9BF050002D569 /* gaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gaViewController.m; sourceTree = "<group>"; };
 		65C5C47E18F9BF050002D569 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65C5C48418F9BF050002D569 /* gaportfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gaportfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C5C48518F9BF050002D569 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -115,8 +112,6 @@
 				65C5C47518F9BF050002D569 /* gaAppDelegate.h */,
 				65C5C47618F9BF050002D569 /* gaAppDelegate.m */,
 				65C5C47818F9BF050002D569 /* Main.storyboard */,
-				65C5C47B18F9BF050002D569 /* gaViewController.h */,
-				65C5C47C18F9BF050002D569 /* gaViewController.m */,
 				65C5C47E18F9BF050002D569 /* Images.xcassets */,
 				65C5C46D18F9BF050002D569 /* Supporting Files */,
 			);
@@ -251,7 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C5C47718F9BF050002D569 /* gaAppDelegate.m in Sources */,
-				65C5C47D18F9BF050002D569 /* gaViewController.m in Sources */,
 				65C5C47318F9BF050002D569 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
