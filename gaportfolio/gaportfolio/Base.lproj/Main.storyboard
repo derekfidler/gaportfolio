@@ -56,6 +56,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="About Me" image="tabAboutMe" id="wMa-je-1Mg"/>
                     <connections>
+                        <outlet property="profileImage" destination="KyG-fD-Cj5" id="PLg-At-sBj"/>
                         <outlet property="scrollView" destination="f8g-6i-REZ" id="WGM-ol-Vad"/>
                         <outlet property="textView" destination="DgA-JW-up5" id="vSY-Xq-xdh"/>
                     </connections>

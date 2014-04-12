@@ -30,6 +30,11 @@
     
     CGFloat contentHeight = self.textView.frame.origin.y + self.textView.frame.size.height;
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, contentHeight + 60);
+    
+    self.profileImage.layer.borderWidth = 5.0;
+    self.profileImage.layer.borderColor = [UIColor yellowColor].CGColor;
+    self.profileImage.layer.cornerRadius = 10.0;
+    self.profileImage.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning
