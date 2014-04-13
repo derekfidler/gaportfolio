@@ -10,4 +10,7 @@
 
 @interface GAWebviewController : UIViewController
 
+@property( nonatomic, strong ) IBOutlet UIWebView * webView;
+@property (nonatomic,strong ) IBOutlet NSString *urlString;
+
 @end

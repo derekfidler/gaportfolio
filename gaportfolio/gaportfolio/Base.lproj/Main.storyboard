@@ -120,9 +120,6 @@ Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismo
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="jgu-nl-GnB" kind="push" identifier="socialLinksToDribbbleSegue" id="bm9-Cn-QfZ"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="jDm-Ih-fqA" imageView="bug-Gb-86O" style="IBUITableViewCellStyleDefault" id="us2-aR-HLR">
                                         <rect key="frame" x="0.0" y="108" width="320" height="44"/>
@@ -248,34 +245,10 @@ Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismo
             </objects>
             <point key="canvasLocation" x="1025" y="595"/>
         </scene>
-        <!--View Controller - Dribbble-->
-        <scene sceneID="3Ba-pu-AOL">
-            <objects>
-                <viewController id="jgu-nl-GnB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IBA-3Q-8sQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="hfn-jh-ZVj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Dribbble" id="SWn-qv-oPG">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="Y7T-Qa-fNV"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a2E-ta-pEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1495" y="922"/>
-        </scene>
-        <!--View Controller - Facebook-->
+        <!--Webview Controller - Facebook-->
         <scene sceneID="ZEQ-kL-0YQ">
             <objects>
-                <viewController id="EBc-KA-nkT" sceneMemberID="viewController">
+                <viewController id="EBc-KA-nkT" customClass="GAWebviewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hTs-9e-DbU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -289,10 +262,13 @@ Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismo
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Facebook" id="tSt-B7-azf"/>
+                    <connections>
+                        <outlet property="webView" destination="kby-ya-jKY" id="RfR-Ty-swQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNh-Ho-CiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1495" y="234"/>
+            <point key="canvasLocation" x="1440" y="595"/>
         </scene>
         <!--Navigation Controller - Social-->
         <scene sceneID="7bi-Bb-uxa">

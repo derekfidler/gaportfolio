@@ -7,6 +7,7 @@
 //
 
 #import "GASocialTableViewController.h"
+#import "GAWebviewController.h"
 
 @interface GASocialTableViewController ()
 
@@ -32,6 +33,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,16 +46,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 6;
 }
 
 /*
@@ -113,6 +115,10 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    GAWebviewController *webViewController = [segue destinationViewController];
+    webViewController.urlString = @"http://www.facebook.com";
+    
 }
 
 

@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString: self.urlString] ];
+    [self.webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +46,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+ 
 }
 */
 
