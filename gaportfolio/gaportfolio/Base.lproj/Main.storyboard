@@ -141,9 +141,6 @@ Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismo
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="EBc-KA-nkT" kind="push" identifier="socialLinksToFacebookSegue" id="u7g-9y-In8"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="POa-Jq-Nky" imageView="mDH-Sc-6Ej" style="IBUITableViewCellStyleDefault" id="AgF-xP-3R6">
                                         <rect key="frame" x="0.0" y="152" width="320" height="44"/>
@@ -165,9 +162,6 @@ Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismo
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="EBc-KA-nkT" kind="push" identifier="socialLinksToGithubSegue" id="EG4-V8-mdy"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="bwM-YL-KXh" imageView="xd0-hh-kJV" style="IBUITableViewCellStyleDefault" id="Cw2-Sd-L05">
                                         <rect key="frame" x="0.0" y="196" width="320" height="44"/>
@@ -243,6 +237,9 @@ Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismo
                     <navigationItem key="navigationItem" title="Social Links" id="3H2-4R-Thk">
                         <barButtonItem key="backBarButtonItem" title="Back" id="nhV-Mm-0eM"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="EBc-KA-nkT" kind="push" identifier="segueToWebview" id="SVf-Wd-xn4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPd-Se-NN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -324,7 +321,4 @@ Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismo
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="EG4-V8-mdy"/>
-    </inferredMetricsTieBreakers>
 </document>

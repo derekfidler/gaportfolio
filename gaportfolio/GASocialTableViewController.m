@@ -10,7 +10,10 @@
 #import "GAWebviewController.h"
 
 @interface GASocialTableViewController ()
-
+{
+    NSString * _urlString;
+    NSString * _titleString;
+}
 @end
 
 @implementation GASocialTableViewController
@@ -117,16 +120,40 @@
     // Pass the selected object to the new view controller.
     
     GAWebviewController *webViewController = [segue destinationViewController];
-    
-    if ([segue.identifier isEqualToString:@"socialLinksToFacebookSegue"]) {
-        webViewController.urlString = @"http://www.facebook.com";
-        
-    }
-    if ([segue.identifier isEqualToString:@"socialLinksToGithubSegue"]) {
-        webViewController.urlString = @"http://www.github.com";
-    }
+    webViewController.urlString = _urlString;
+    webViewController.navigationItem.title = _titleString;
 
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+            _urlString = @"http://dribbble.com";
+            break;
+        case 1:
+            _urlString = @"http://facebook.com";
+            break;
+        case 2:
+            _urlString = @"http://github.com";
+            break;
+        case 3:
+            _urlString = @"http://linkedin.com";
+            break;
+        case 4:
+            _urlString = @"http://twitter.com";
+            break;
+        case 5:
+            _urlString = @"http://behance.com";
+            break;
+        default:
+            break;
+    }
     
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    _titleString = cell.textLabel.text;
+    
+    [self performSegueWithIdentifier:@"segueToWebview" sender:self];
 }
 
 
