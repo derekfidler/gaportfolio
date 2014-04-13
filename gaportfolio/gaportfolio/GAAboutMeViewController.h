@@ -11,7 +11,7 @@
 @interface GAAboutMeViewController : UIViewController
 
 @property ( nonatomic, strong ) IBOutlet UIScrollView * scrollView;
-@property (nonatomic, strong) IBOutlet UITextView * textView;
-@property (nonatomic , strong ) IBOutlet UIImageView * profileImage;
+@property ( nonatomic, strong ) IBOutlet UITextView * textView;
+@property ( nonatomic , strong ) IBOutlet UIImageView * profileImage;
 
 @end

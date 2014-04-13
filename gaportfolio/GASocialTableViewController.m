@@ -117,7 +117,15 @@
     // Pass the selected object to the new view controller.
     
     GAWebviewController *webViewController = [segue destinationViewController];
-    webViewController.urlString = @"http://www.facebook.com";
+    
+    if ([segue.identifier isEqualToString:@"socialLinksToFacebookSegue"]) {
+        webViewController.urlString = @"http://www.facebook.com";
+        
+    }
+    if ([segue.identifier isEqualToString:@"socialLinksToGithubSegue"]) {
+        webViewController.urlString = @"http://www.github.com";
+    }
+
     
 }
 
