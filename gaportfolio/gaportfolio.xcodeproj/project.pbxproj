@@ -18,6 +18,9 @@
 		659A5D3718FB393E00419012 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A5D2C18FB393E00419012 /* AFURLRequestSerialization.m */; };
 		659A5D3818FB393E00419012 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A5D2E18FB393E00419012 /* AFURLResponseSerialization.m */; };
 		659A5D3918FB393E00419012 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A5D3018FB393E00419012 /* AFURLSessionManager.m */; };
+		659A5D3C18FB444100419012 /* GAProjectObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A5D3B18FB444100419012 /* GAProjectObject.m */; };
+		659A5D4118FB45A400419012 /* GAProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A5D4018FB45A400419012 /* GAProjectsViewController.m */; };
+		659A5D4418FB46B200419012 /* GAProjectDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A5D4318FB46B200419012 /* GAProjectDetailsViewController.m */; };
 		65C5C46718F9BF050002D569 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5C46618F9BF050002D569 /* Foundation.framework */; };
 		65C5C46918F9BF050002D569 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5C46818F9BF050002D569 /* CoreGraphics.framework */; };
 		65C5C46B18F9BF050002D569 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5C46A18F9BF050002D569 /* UIKit.framework */; };
@@ -68,6 +71,12 @@
 		659A5D2E18FB393E00419012 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		659A5D2F18FB393E00419012 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		659A5D3018FB393E00419012 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		659A5D3A18FB444100419012 /* GAProjectObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAProjectObject.h; sourceTree = "<group>"; };
+		659A5D3B18FB444100419012 /* GAProjectObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAProjectObject.m; sourceTree = "<group>"; };
+		659A5D3F18FB45A400419012 /* GAProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAProjectsViewController.h; sourceTree = "<group>"; };
+		659A5D4018FB45A400419012 /* GAProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAProjectsViewController.m; sourceTree = "<group>"; };
+		659A5D4218FB46B200419012 /* GAProjectDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAProjectDetailsViewController.h; sourceTree = "<group>"; };
+		659A5D4318FB46B200419012 /* GAProjectDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAProjectDetailsViewController.m; sourceTree = "<group>"; };
 		65C5C46318F9BF050002D569 /* gaportfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaportfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C5C46618F9BF050002D569 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65C5C46818F9BF050002D569 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +148,32 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		659A5D3D18FB445000419012 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				659A5D3F18FB45A400419012 /* GAProjectsViewController.h */,
+				659A5D4018FB45A400419012 /* GAProjectsViewController.m */,
+				659A5D0E18FB151700419012 /* GASocialTableViewController.h */,
+				659A5D0F18FB151700419012 /* GASocialTableViewController.m */,
+				65C5C49B18F9E2E10002D569 /* GAAboutMeViewController.h */,
+				65C5C49C18F9E2E10002D569 /* GAAboutMeViewController.m */,
+				659A5D1418FB165100419012 /* GAWebviewController.h */,
+				659A5D1518FB165100419012 /* GAWebviewController.m */,
+				659A5D4218FB46B200419012 /* GAProjectDetailsViewController.h */,
+				659A5D4318FB46B200419012 /* GAProjectDetailsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		659A5D3E18FB446C00419012 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				659A5D3A18FB444100419012 /* GAProjectObject.h */,
+				659A5D3B18FB444100419012 /* GAProjectObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		65C5C45A18F9BF050002D569 = {
 			isa = PBXGroup;
 			children = (
@@ -172,18 +207,14 @@
 		65C5C46C18F9BF050002D569 /* gaportfolio */ = {
 			isa = PBXGroup;
 			children = (
-				659A5D1D18FB393E00419012 /* AFNetworking */,
-				659A5D0E18FB151700419012 /* GASocialTableViewController.h */,
-				659A5D0F18FB151700419012 /* GASocialTableViewController.m */,
+				65C5C47818F9BF050002D569 /* Main.storyboard */,
+				659A5D3E18FB446C00419012 /* Model */,
+				659A5D3D18FB445000419012 /* View Controllers */,
 				65C5C47518F9BF050002D569 /* gaAppDelegate.h */,
 				65C5C47618F9BF050002D569 /* gaAppDelegate.m */,
-				65C5C47818F9BF050002D569 /* Main.storyboard */,
-				65C5C49B18F9E2E10002D569 /* GAAboutMeViewController.h */,
-				65C5C49C18F9E2E10002D569 /* GAAboutMeViewController.m */,
 				65C5C47E18F9BF050002D569 /* Images.xcassets */,
+				659A5D1D18FB393E00419012 /* AFNetworking */,
 				65C5C46D18F9BF050002D569 /* Supporting Files */,
-				659A5D1418FB165100419012 /* GAWebviewController.h */,
-				659A5D1518FB165100419012 /* GAWebviewController.m */,
 			);
 			path = gaportfolio;
 			sourceTree = "<group>";
@@ -321,7 +352,10 @@
 				659A5D3918FB393E00419012 /* AFURLSessionManager.m in Sources */,
 				659A5D3718FB393E00419012 /* AFURLRequestSerialization.m in Sources */,
 				65C5C47718F9BF050002D569 /* gaAppDelegate.m in Sources */,
+				659A5D4118FB45A400419012 /* GAProjectsViewController.m in Sources */,
 				659A5D3818FB393E00419012 /* AFURLResponseSerialization.m in Sources */,
+				659A5D3C18FB444100419012 /* GAProjectObject.m in Sources */,
+				659A5D4418FB46B200419012 /* GAProjectDetailsViewController.m in Sources */,
 				65C5C49D18F9E2E10002D569 /* GAAboutMeViewController.m in Sources */,
 				659A5D1018FB151700419012 /* GASocialTableViewController.m in Sources */,
 				659A5D3218FB393E00419012 /* AFHTTPRequestOperationManager.m in Sources */,
