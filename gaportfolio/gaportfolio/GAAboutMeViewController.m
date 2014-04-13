@@ -35,6 +35,34 @@
     self.profileImage.layer.borderColor = [UIColor yellowColor].CGColor;
     self.profileImage.layer.cornerRadius = 10.0;
     self.profileImage.clipsToBounds = YES;
+    
+    self.profileImage.frame = CGRectMake(
+        self.profileImage.frame.origin.x - 500,
+        self.profileImage.frame.origin.y,
+        self.profileImage.frame.size.width,
+        self.profileImage.frame.size.height);
+    
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    [UIView animateWithDuration:0.5
+        animations:^{
+            self.profileImage.frame = CGRectMake(
+                self.profileImage.frame.origin.x + 500,
+                self.profileImage.frame.origin.y,
+                self.profileImage.frame.size.width,
+                self.profileImage.frame.size.height);
+            }];
+}
+
+- (void) viewDidDisappear:(BOOL)animated
+{
+    self.profileImage.frame = CGRectMake(
+         self.profileImage.frame.origin.x - 500,
+         self.profileImage.frame.origin.y,
+         self.profileImage.frame.size.width,
+         self.profileImage.frame.size.height);
 }
 
 - (void)didReceiveMemoryWarning
