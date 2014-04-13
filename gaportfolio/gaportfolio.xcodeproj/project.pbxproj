@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		659A5D1018FB151700419012 /* GASocialTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A5D0F18FB151700419012 /* GASocialTableViewController.m */; };
+		659A5D1618FB165100419012 /* GAWebviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A5D1518FB165100419012 /* GAWebviewController.m */; };
 		65C5C46718F9BF050002D569 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5C46618F9BF050002D569 /* Foundation.framework */; };
 		65C5C46918F9BF050002D569 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5C46818F9BF050002D569 /* CoreGraphics.framework */; };
 		65C5C46B18F9BF050002D569 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C5C46A18F9BF050002D569 /* UIKit.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		659A5D0E18FB151700419012 /* GASocialTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GASocialTableViewController.h; path = ../GASocialTableViewController.h; sourceTree = "<group>"; };
+		659A5D0F18FB151700419012 /* GASocialTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GASocialTableViewController.m; path = ../GASocialTableViewController.m; sourceTree = "<group>"; };
+		659A5D1418FB165100419012 /* GAWebviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAWebviewController.h; sourceTree = "<group>"; };
+		659A5D1518FB165100419012 /* GAWebviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAWebviewController.m; sourceTree = "<group>"; };
 		65C5C46318F9BF050002D569 /* gaportfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaportfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C5C46618F9BF050002D569 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65C5C46818F9BF050002D569 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +118,8 @@
 		65C5C46C18F9BF050002D569 /* gaportfolio */ = {
 			isa = PBXGroup;
 			children = (
+				659A5D0E18FB151700419012 /* GASocialTableViewController.h */,
+				659A5D0F18FB151700419012 /* GASocialTableViewController.m */,
 				65C5C47518F9BF050002D569 /* gaAppDelegate.h */,
 				65C5C47618F9BF050002D569 /* gaAppDelegate.m */,
 				65C5C47818F9BF050002D569 /* Main.storyboard */,
@@ -119,6 +127,8 @@
 				65C5C49C18F9E2E10002D569 /* GAAboutMeViewController.m */,
 				65C5C47E18F9BF050002D569 /* Images.xcassets */,
 				65C5C46D18F9BF050002D569 /* Supporting Files */,
+				659A5D1418FB165100419012 /* GAWebviewController.h */,
+				659A5D1518FB165100419012 /* GAWebviewController.m */,
 			);
 			path = gaportfolio;
 			sourceTree = "<group>";
@@ -252,6 +262,8 @@
 			files = (
 				65C5C47718F9BF050002D569 /* gaAppDelegate.m in Sources */,
 				65C5C49D18F9E2E10002D569 /* GAAboutMeViewController.m in Sources */,
+				659A5D1018FB151700419012 /* GASocialTableViewController.m in Sources */,
+				659A5D1618FB165100419012 /* GAWebviewController.m in Sources */,
 				65C5C47318F9BF050002D569 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +469,7 @@
 				65C5C49718F9BF050002D569 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65C5C49818F9BF050002D569 /* Build configuration list for PBXNativeTarget "gaportfolioTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +478,7 @@
 				65C5C49A18F9BF050002D569 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
